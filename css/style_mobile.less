@@ -1,0 +1,52 @@
+@import "import-lib-mixins";
+@import "import-lib-reset";
+
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family:"Hiragino Sans GB","Microsoft Yahei",arial,"Helvetica Neue", Helvetica, Arial, sans-serif;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-user-select: none;
+	user-select: none;
+	-webkit-touch-callout: none; // 禁用长按链接弹出操作浮层
+	background: #f9e65c;
+}
+.pc{
+	display: none;
+}
+.mobile{
+	background:#5ab7de url("../img/bg_banner_mobile.jpg") no-repeat;
+	width:320px;
+	height: 150px;
+	background-size: 320px 150px;
+	position: relative;
+}
+.wrap-location,.wrap-date{
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	left: 10px;
+	color: white;
+	font-size: 12px;
+}
+.wrap-location{
+	top:50px;
+}
+.wrap-date{
+	top:70px;
+}
+.icon-location{
+	display: inline-block;
+	vertical-align: middle;
+	background-image: url("../slice/icon-location.png");
+	width: 10px;
+	height: 15px;
+}
+.icon-date{
+	display: inline-block;
+	vertical-align: middle;
+	background-image: url("../slice/icon-date.png");
+	width: 10px;
+	height: 14px;
+}
